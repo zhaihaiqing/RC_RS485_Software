@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z Microsoft, Microsoft, LIC=0VRAR-KNITA-9XHUW-Q0NB5-1EVBH-JEH8M
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\SD\RC_RS485_Software\Project.uvprojx
+Project File Date:  07/18/2017
+
+<h2>Output:</h2>
+Build target 'STM32F1XX'
+compiling main.c...
+User\Timer.h(8): warning:  #1295-D: Deprecated declaration PWM_GPIO - give arg types
+  void PWM_GPIO();
+User\EEPROM_I2C.h(9): warning:  #1295-D: Deprecated declaration EEInit - give arg types
+  extern void EEInit();
+User\main.c(52): warning:  #174-D: expression has no effect
+        while(TimingDelay != 0)__WFI;//等待过程中进入sleep模式,下方指令在执行过程中容易进入
+User\main.c(118): warning:  #111-D: statement is unreachable
+        if(0)SystemResetSoft();
+User\main.c(81): warning:  #177-D: variable "USART1_RX" was declared but never referenced
+        unsigned char USART1_RX[256];
+User\main.c(82): warning:  #177-D: variable "USART2_RX" was declared but never referenced
+        unsigned char USART2_RX[256];
+User\main.c(83): warning:  #177-D: variable "USART3_RX" was declared but never referenced
+        unsigned char USART3_RX[256];
+User\main.c(84): warning:  #177-D: variable "test" was declared but never referenced
+        unsigned char test=0;
+User\main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=10892 RO-data=360 RW-data=88 ZI-data=1816  
+FromELF: creating hex file...
+".\Output\Project.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\SD\RC_RS485_Software\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

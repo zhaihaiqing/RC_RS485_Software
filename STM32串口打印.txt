@@ -1,0 +1,4 @@
+将串口printf函数从STM32L151移植到STM32F103，发现printf函数无法使用，编译下载后单片机完全不运行，使用USART_PutChar函数能够正常打印数据。检查代码，发现没有错误，初步怀疑是配置问题。
+
+
+解决办法：打开Options for 'STM32xxxx'下的Target选项卡，将“Use MicroLIB”项勾选，并重新编译工程，下载。
